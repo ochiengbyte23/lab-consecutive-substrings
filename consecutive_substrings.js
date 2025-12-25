@@ -1,10 +1,9 @@
 function consecutiveSubstrings(string) {
   const result = [];
-  const inputResult = "abc";
 
-  for (i = 0; i < inputResult.length; i++) {
-    for (j = i + 1; j < inputResult.length; j++) {
-      const sliceInput = inputResult.slice(i, j);
+  for (i = 0; i < string.length; i++) {
+    for (j = i + 1; j <= string.length; j++) {
+      const sliceInput = string.slice(i, j);
       result.push(sliceInput);
 
     }
